@@ -40,7 +40,8 @@ Challenges
    
 
 Training process
-    	A 0.9 train and 0.1 test split has been first applied. 
+    	
+	A 0.9 train and 0.1 test split has been first applied. 
     	Secondly, hyperparameter tuning has been performed on a dev set, composed of 0.1 of the train examples 
 	and using f1-score as performance metric.
 	Training of the model follows, using the best parameters emerged from the previous phase.
@@ -52,29 +53,30 @@ Evaluation
 	compared against the baseline model described above.
 	
 	
-Performance Metrics  
+Performance Metrics
 
-    	We experiment with various metrics that the scikit learn and Spark ML libraries provide.
+	We experiment with various metrics that the scikit learn and Spark ML libraries provide.
 	F1-score is adopted for the comparison between the models. 
  
 
-Code  
+Code
 
-   decision_tree_prediction_simple.py
-   decision_tree_prediction_using_categorical_feats.py
-   code under prediction_with_mlflow_hyperopt folder
+   	decision_tree_prediction_simple.py
+   	decision_tree_prediction_using_categorical_feats.py
+   	code under prediction_with_mlflow_hyperopt folder
    
-   All can be run interactively with pyspark shell or by submitting e.g. exec(open("project/location/forest_coverage_prediction/decision_tree_prediction_simple.py").read()) 
-   for an all at once execution. The code has been tested on a Spark standalone cluster. For the Spark setting,
-   spark-3.1.2-bin-hadoop2.7 bundle has been used.
-   The external python packages that are used in this implementation exist in the requirements.txt file. Install with: 
+   	All can be run interactively with pyspark shell or by submitting e.g. exec(open("project/location/forest_coverage_prediction				
+	/decision_tree_prediction_simple.py").read()) for an all at once execution. The code has been tested on a Spark 
+	standalone cluster. For the Spark setting, spark-3.1.2-bin-hadoop2.7 bundle has been used.
+   	The external python packages that are used in this implementation exist in the requirements.txt file. Install with: 
 	   pip install -r project/location/forest_coverage_prediction/requirements.txt
-   This use case is inspired from the series of experiments presented in [3], though it deviates from it, in the
-   programming language, the setting used and in the analysis followed.
+   	This use case is inspired from the series of experiments presented in [3], though it deviates from it, in the
+   	programming language, the setting used and in the analysis followed.
    
  
 
 References
+
 	1. https://scikit-learn.org/stable/modules/tree.html
 	2. https://archive.ics.uci.edu/ml/machine-learning-databases/covtype/
 	3. Advanced Analytics with Spark, Sandy Ryza, Uri Laserson, Sean Owen, & Josh Wills
