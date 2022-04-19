@@ -42,7 +42,7 @@ Challenges
 Training process
     	
 	A 0.9 train and 0.1 test split has been first applied. 
-    	Secondly, hyperparameter tuning has been performed on a dev set, composed of 0.1 of the train examples 
+	Secondly, hyperparameter tuning has been performed on a dev set, composed of 0.1 of the train examples 
 	and using f1-score as performance metric.
 	Training of the model follows, using the best parameters emerged from the previous phase.
 	
