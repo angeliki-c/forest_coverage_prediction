@@ -1,5 +1,6 @@
-# forest_coverage_prediction
-Tree coverage prediction using decision trees
+## Multi-classification using a mixture of numerical and categorical features
+
+### Tree coverage type prediction using decision trees
 
  
  
